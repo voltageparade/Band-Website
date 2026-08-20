@@ -9,10 +9,12 @@ function App() {
     <>
     <Header/>
     <div className='website-viewpoint'>
+      <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
       <Footer/>
+      </Router>
     </div>
     </>
   )
