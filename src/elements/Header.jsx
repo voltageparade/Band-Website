@@ -1,7 +1,19 @@
-import { Link } from "react-router-dom";
-import PropTypes from 'prop-types';
+export function Header () {
+    const header = {
+        backgroundColor: "rgb(56, 56, 56)",
+        top: "0",
+        padding: "1%",
+        color: "white"
+    }
+    const button = {
+        padding: "5px 10px",
+        backgroundColor: "rgba(56, 56, 56, 0.55)",
+        color: "white",
+        border: "none",
+        textDecoration: "none",
+        transition: "0.3s ease",
+        cursor: "pointer"}
 
-function Header(props) {
     const navbar = {
         display: "flex",
         flexWrap: "wrap",
@@ -11,45 +23,16 @@ function Header(props) {
         gap: "10px",
         width: "100%",
     }
-
-    const button = {
-        width: "30%",
-        padding: "1% 0",
-        maxWidth: "300px",
-        backgroundColor: "rgba(137, 58, 137, 0.55)",
-        boxShadow: "1px 2px 2px rgba(70, 38, 70, 0.55)",
-        fontSize: "18px",
-        color: "white",
-        border: "none",
-        borderRadius: "5px",
-        textDecoration: "none",
-        transition: "0.3s ease",
-        cursor: "pointer"}
-    
-        const hr = {
-            backgroundColor: "black",
-            color: "black"
-        }
-
     return (
-        <header className="top-bottom-elements" >
-            <h1>Voltage Parade</h1>
-            <h3>{props.page}</h3>
-            <hr style={hr}/>
-            <nav style = {navbar}>
-                <Link style = {button} to = "/">Home</Link>
-                <Link style = {button} to = "/EventsPage">Events</Link>
-                <Link style = {button} to = "/ReleasesPage">Releases</Link>
-            </nav>
+        <>
+        <header style = {header}>
+            <h2>VOLTAGE PARADE</h2>
+            <navbar style = {navbar}>
+                <button style={button}>FACEBOOK</button>
+                <button style = {button}>INSTAGRAM</button>
+                <button style={button}>TIKTOK</button>
+            </navbar>
         </header>
+        </>
     )
 }
-
-Header.propTypes = {
-    page: PropTypes.string.isRequired
-};
-Header.defaultProps = {
-    page: "Unknown ",
-};
-
-export default Header;
