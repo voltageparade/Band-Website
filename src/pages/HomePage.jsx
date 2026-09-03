@@ -31,7 +31,7 @@ export function HomePage() {
     }
 
     const andrewIntro = "I was influenced by the Red Hot Chili Peppers and I like to be a part of this band to grow as a bassist.";
-    const jamesIntro = "Far too many to list. I have a universal taste in music from Sinatra to Hendrix to The Doors. I see my musical journey now being hopefully spent in keeping music both live and also essentially human with the advent of AI being kept very much out of the picture. Still.........with the experience i have after all these years, things are alot different now, music has far less importance and impact, it has become background noise. Just a middle aged man's  opinion."
+    const samIntro = ""
     const KjIntro = "My influences are David Gilmour, Joe Satriani, Slash and Steve Vai with these  influences is the reason why I do guitar and my lead solos are based of the melodic style of these guitarists and I like been in the band because it's building up my confidence to gain more skills in playing lead and singing at the same time"
     const alyssaIntro = "After starting guitar lessons at the age of 10 my influences have changed throughout the years but my main influence to make the switch from acoustic to electric is the Arctic Monkeys. From my first exposure to a band setting at 14 I knew I wanted to be in a band to jam and make music with other musicians. Tour life has always been a dream of mine and I can't wait to get out there and gig"
 
@@ -43,10 +43,10 @@ export function HomePage() {
         setIntroText(andrewIntro);
         setName("Andrew")
     }
-    function viewJames() {
+    function viewSam() {
         setIntroDisplay(true);
         setIntroText(jamesIntro);
-        setName("James")
+        setName("Sam")
     }
     function viewKyle() {
         setIntroDisplay(true);
@@ -77,7 +77,7 @@ export function HomePage() {
                             <li>KJ (Vocals/Guitar)</li>
                             <li>Alyssa (Guitar)</li>
                             <li>Andrew (Bass Guitar)</li>
-                            <li>James (Drums)</li>
+                            <li>Sam(Drums)</li>
                         </ul>
                 </div>
 
@@ -85,7 +85,7 @@ export function HomePage() {
                     <h2>An Intro to the band</h2>
         
                     <button className="itemButton" onClick={viewAndrew}>Andrew</button>
-                    <button className="itemButton" onClick={viewJames}>James</button>
+                    <button className="itemButton" onClick={viewSam}>James</button>
                     <button className="itemButton" onClick={viewKyle}>KJ</button>
                     <button className="itemButton" onClick={viewAlyssa}>Alyssa</button>
 
